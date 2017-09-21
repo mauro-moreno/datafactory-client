@@ -1,0 +1,40 @@
+MauroMoreno\DataFactory\Entity\MatchSheet:
+  access_type: public_method
+  exclusion_policy: ALL
+  properties:
+    id:
+      type: "int"
+      xml_attribute: true
+    date:
+      type: "int"
+      xml_attribute: true
+      serialized_name: "dia"
+    day:
+      type: "string"
+      xml_attribute: true
+      serialized_name: "nombreDia"
+    hour:
+      type: "string"
+      xml_attribute: true
+      serialized_name: "horario"
+    instance:
+      type: "string"
+      xml_attribute: true
+      serialized_name: "fecha"
+    level:
+      type: "string"
+      xml_attribute: true
+      serialized_name: "nombrenivel"
+    teams:
+      type: "array<MauroMoreno\\DataFactory\\Entity\\Team>"
+      xml_list:
+        entry_name: equipo
+        inline: true
+    timezone:
+      type: "int"
+      xml_attribute: true
+      serialized_name: "gmt"
+    type:
+      type: "string"
+      xml_attribute: true
+      serialized_name: "tipo"

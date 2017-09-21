@@ -1,0 +1,26 @@
+MauroMoreno\DataFactory\Entity\Sheet:
+  access_type: public_method
+  exclusion_policy: ALL
+  properties:
+    category:
+      type: "MauroMoreno\\DataFactory\\Entity\\Category"
+      serialized_name: "categoria"
+    sport:
+      type: "MauroMoreno\\DataFactory\\Entity\\Sport"
+      serialized_name: "deporte"
+    match_sheet:
+      type: "MauroMoreno\\DataFactory\\Entity\\MatchSheet"
+      accessor:
+        getter: "getMatchSheet"
+        setter: "setMatchSheet"
+      serialized_name: "fichapartido"
+    tournament:
+      type: "MauroMoreno\\DataFactory\\Entity\\Tournament"
+      serialized_name: "campeonato"
+    tournament_alt_name:
+      type: "MauroMoreno\\DataFactory\\Entity\\Tournament"
+      accessor:
+        getter: "getTournamentAltName"
+        setter: "setTournamentAltName"
+      serialized_name: "campeonatoNombreAlternativo"
+  xml_root_name: "ficha"

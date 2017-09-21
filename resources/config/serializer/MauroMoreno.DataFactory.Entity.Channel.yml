@@ -1,0 +1,7 @@
+MauroMoreno\DataFactory\Entity\Channel:
+  access_type: public_method
+  exclusion_policy: ALL
+  properties:
+    value:
+      type: "string"
+      xml_value: true

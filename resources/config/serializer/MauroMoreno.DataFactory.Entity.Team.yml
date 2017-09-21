@@ -1,0 +1,32 @@
+MauroMoreno\DataFactory\Entity\Team:
+  access_type: public_method
+  exclusion_policy: ALL
+  properties:
+    id:
+      type: "int"
+      xml_attribute: true
+    country_id:
+      type: "int"
+      accessor:
+        getter: "getCountryId"
+        setter: "setCountryId"
+      xml_attribute: true
+      serialized_name: "paisId"
+    goals:
+      type: "int"
+      xml_attribute: true
+      serialized_name: "goles"
+    penalty_goals:
+      type: "int"
+      accessor:
+        getter: "getPenaltyGoals"
+        setter: "setPenaltyGoals"
+      xml_attribute: true
+      serialized_name: "golesDefPenales"
+    short_name:
+      type: "string"
+      accessor:
+        getter: "getShortName"
+        setter: "setShortName"
+      xml_attribute: true
+      serialized_name: "nombreCorto"

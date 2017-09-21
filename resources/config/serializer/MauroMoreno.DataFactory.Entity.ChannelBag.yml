@@ -1,0 +1,10 @@
+MauroMoreno\DataFactory\Entity\ChannelBag:
+  access_type: public_method
+  exclusion_policy: ALL
+  properties:
+    channels:
+      type: "array<MauroMoreno\\DataFactory\\Entity\\Channel>"
+      xml_list:
+        entry_name: canal
+        inline: true
+  xml_root_name: actualizaciones
