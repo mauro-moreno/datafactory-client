@@ -25,6 +25,9 @@ MauroMoreno\DataFactory\Entity\MatchSheet:
       type: "string"
       xml_attribute: true
       serialized_name: "nombrenivel"
+    status:
+      type: "MauroMoreno\\DataFactory\\Entity\\Status"
+      serialized_name: "estadoEvento"
     teams:
       type: "array<MauroMoreno\\DataFactory\\Entity\\Team>"
       xml_list:

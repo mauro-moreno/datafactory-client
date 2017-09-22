@@ -36,6 +36,11 @@ class MatchSheet
     public $instance;
 
     /**
+     * @var Status
+     */
+    private $status;
+
+    /**
      * @var Team[]
      */
     public $teams;
@@ -142,6 +147,25 @@ class MatchSheet
     public function setInstance(string $instance): MatchSheet
     {
         $this->instance = $instance;
+        return $this;
+    }
+
+    /**
+     * @return Status
+     */
+    public function getStatus(): Status
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param Status $status
+     *
+     * @return MatchSheet
+     */
+    public function setStatus(Status $status): MatchSheet
+    {
+        $this->status = $status;
         return $this;
     }
 

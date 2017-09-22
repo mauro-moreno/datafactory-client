@@ -5,15 +5,15 @@ MauroMoreno\DataFactory\Entity\Sheet:
     category:
       type: "MauroMoreno\\DataFactory\\Entity\\Category"
       serialized_name: "categoria"
-    sport:
-      type: "MauroMoreno\\DataFactory\\Entity\\Sport"
-      serialized_name: "deporte"
     match_sheet:
       type: "MauroMoreno\\DataFactory\\Entity\\MatchSheet"
       accessor:
         getter: "getMatchSheet"
         setter: "setMatchSheet"
       serialized_name: "fichapartido"
+    sport:
+      type: "MauroMoreno\\DataFactory\\Entity\\Sport"
+      serialized_name: "deporte"
     tournament:
       type: "MauroMoreno\\DataFactory\\Entity\\Tournament"
       serialized_name: "campeonato"

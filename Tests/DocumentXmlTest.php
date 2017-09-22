@@ -11,6 +11,7 @@ use MauroMoreno\DataFactory\Entity\Error;
 use MauroMoreno\DataFactory\Entity\MatchSheet;
 use MauroMoreno\DataFactory\Entity\Sheet;
 use MauroMoreno\DataFactory\Entity\Sport;
+use MauroMoreno\DataFactory\Entity\Status;
 use MauroMoreno\DataFactory\Entity\Team;
 use MauroMoreno\DataFactory\Entity\Tournament;
 use PHPUnit\Framework\TestCase;
@@ -115,7 +116,8 @@ class DocumentXmlTest extends TestCase
             ->setDay('Miércoles')
             ->setHour('13:00')
             ->setTimezone(-3)
-            ->setTeams($teams);
+            ->setTeams($teams)
+            ->setStatus((new Status)->setId(2)->setValue('Finalizado'));
         $sheet = (new Sheet)
             ->setSport((new Sport)->setId(1)->setValue('Fútbol'))
             ->setCategory((new Category)->setId(6)

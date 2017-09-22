@@ -3,22 +3,17 @@
 namespace MauroMoreno\DataFactory\Entity;
 
 /**
- * Class Category
+ * Class Status
  *
  * @package MauroMoreno\DataFactory\Entity
  */
-class Category
+class Status
 {
 
     /**
      * @var int
      */
     private $id;
-
-    /**
-     * @var string
-     */
-    private $channel;
 
     /**
      * @var string
@@ -36,30 +31,11 @@ class Category
     /**
      * @param int $id
      *
-     * @return Category
+     * @return Status
      */
-    public function setId(int $id): Category
+    public function setId(int $id): Status
     {
         $this->id = $id;
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getChannel(): string
-    {
-        return $this->channel;
-    }
-
-    /**
-     * @param string $channel
-     *
-     * @return Category
-     */
-    public function setChannel(string $channel): Category
-    {
-        $this->channel = $channel;
         return $this;
     }
 
@@ -74,9 +50,9 @@ class Category
     /**
      * @param string $value
      *
-     * @return Category
+     * @return Status
      */
-    public function setValue(string $value): Category
+    public function setValue(string $value): Status
     {
         $this->value = $value;
         return $this;

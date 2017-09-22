@@ -1,0 +1,11 @@
+MauroMoreno\DataFactory\Entity\Status:
+  access_type: public_method
+  exclusion_policy: ALL
+  properties:
+    id:
+      type: "int"
+      xml_attribute: true
+      serialized_name: "idestado"
+    value:
+      type: "string"
+      xml_value: true

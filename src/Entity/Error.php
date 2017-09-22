@@ -30,7 +30,7 @@ class Error
      */
     public function setValue(string $value)
     {
-        $this->value = $value;
+        $this->value = trim($value);
         return $this;
     }
 
