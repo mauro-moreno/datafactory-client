@@ -23,6 +23,8 @@ class MatchSheetTest extends TestCase
         $this->assertEquals('hour_value', $matchSheet->getHour());
         $this->assertEquals($matchSheet, $matchSheet->setHourStatus('hour_status_value'));
         $this->assertEquals('hour_status_value', $matchSheet->getHourStatus());
+        $this->assertEquals($matchSheet, $matchSheet->setIncidences([]));
+        $this->assertEquals([], $matchSheet->getIncidences());
         $this->assertEquals($matchSheet, $matchSheet->setInstance('instance_value'));
         $this->assertEquals('instance_value', $matchSheet->getInstance());
         $this->assertEquals($matchSheet, $matchSheet->setStatus($status));

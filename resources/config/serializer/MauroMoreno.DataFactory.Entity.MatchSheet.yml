@@ -23,6 +23,11 @@ MauroMoreno\DataFactory\Entity\MatchSheet:
         getter: "getHourStatus"
         setter: "setHourStatus"
       serialized_name: "horaEstadoEvento"
+    incidences:
+      type: "array<MauroMoreno\\DataFactory\\Entity\\Incidence>"
+      xml_list:
+        entry_name: incidencia
+      serialized_name: incidencias
     instance:
       type: "string"
       xml_attribute: true

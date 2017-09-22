@@ -36,6 +36,11 @@ class MatchSheet
     private $hour_status;
 
     /**
+     * @var Incidence[]
+     */
+    private $incidences;
+
+    /**
      * @var string
      */
     private $instance;
@@ -152,6 +157,25 @@ class MatchSheet
     public function setHourStatus(string $hour_status): MatchSheet
     {
         $this->hour_status = $hour_status;
+        return $this;
+    }
+
+    /**
+     * @return Incidence[]
+     */
+    public function getIncidences(): array
+    {
+        return $this->incidences;
+    }
+
+    /**
+     * @param \MauroMoreno\DataFactory\Entity\Incidence[] $incidences
+     *
+     * @return MatchSheet
+     */
+    public function setIncidences(array $incidences): MatchSheet
+    {
+        $this->incidences = $incidences;
         return $this;
     }
 

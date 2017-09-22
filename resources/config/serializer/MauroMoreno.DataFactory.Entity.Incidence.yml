@@ -1,0 +1,7 @@
+MauroMoreno\DataFactory\Entity\Incidence:
+  access_type: public_method
+  exclusion_policy: ALL
+  properties:
+    id:
+      type: "int"
+      xml_attribute: true
