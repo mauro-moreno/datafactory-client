@@ -117,7 +117,8 @@ class DocumentXmlTest extends TestCase
             ->setHour('13:00')
             ->setTimezone(-3)
             ->setTeams($teams)
-            ->setStatus((new Status)->setId(2)->setValue('Finalizado'));
+            ->setStatus((new Status)->setId(2)->setValue('Finalizado'))
+            ->setHourStatus('14:50:17');
         $sheet = (new Sheet)
             ->setSport((new Sport)->setId(1)->setValue('Fútbol'))
             ->setCategory((new Category)->setId(6)

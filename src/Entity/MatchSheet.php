@@ -13,27 +13,32 @@ class MatchSheet
     /**
      * @var int
      */
-    public $id;
+    private $id;
 
     /**
      * @var int
      */
-    public $date;
+    private $date;
 
     /**
      * @var string
      */
-    public $day;
+    private $day;
 
     /**
      * @var string
      */
-    public $hour;
+    private $hour;
 
     /**
      * @var string
      */
-    public $instance;
+    private $hour_status;
+
+    /**
+     * @var string
+     */
+    private $instance;
 
     /**
      * @var Status
@@ -43,17 +48,17 @@ class MatchSheet
     /**
      * @var Team[]
      */
-    public $teams;
+    private $teams;
 
     /**
      * @var string
      */
-    public $type;
+    private $type;
 
     /**
      * @var int
      */
-    public $timezone;
+    private $timezone;
 
     /**
      * @return int
@@ -128,6 +133,25 @@ class MatchSheet
     public function setHour(string $hour): MatchSheet
     {
         $this->hour = $hour;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getHourStatus(): string
+    {
+        return $this->hour_status;
+    }
+
+    /**
+     * @param string $hour_status
+     *
+     * @return MatchSheet
+     */
+    public function setHourStatus(string $hour_status): MatchSheet
+    {
+        $this->hour_status = $hour_status;
         return $this;
     }
 

@@ -17,6 +17,12 @@ MauroMoreno\DataFactory\Entity\MatchSheet:
       type: "string"
       xml_attribute: true
       serialized_name: "horario"
+    hour_status:
+      type: "string"
+      accessor:
+        getter: "getHourStatus"
+        setter: "setHourStatus"
+      serialized_name: "horaEstadoEvento"
     instance:
       type: "string"
       xml_attribute: true
