@@ -45,6 +45,10 @@ MauroMoreno\DataFactory\Entity\Incidence:
     second:
       type: "int"
       serialized_name: "segundo"
+    subtype:
+      type: "string"
+      serialized_name: "subtipo"
+      xml_attribute: true
     team_short_name:
       type: "string"
       accessor:

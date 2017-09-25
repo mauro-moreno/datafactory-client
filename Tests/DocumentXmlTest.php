@@ -104,6 +104,7 @@ class DocumentXmlTest extends TestCase
         $incidences = [
             (new Incidence)
                 ->setType("gol")
+                ->setSubtype("gol de jugada")
                 ->setId(18906618)
                 ->setOrder(1)
                 ->setIncidenceId(9)
@@ -115,6 +116,7 @@ class DocumentXmlTest extends TestCase
                 ->setKey((new IncidenceKey)->setId(61)->setValue("roma")),
             (new Incidence)
                 ->setType("gol")
+                ->setSubtype("gol en contra")
                 ->setId(18906642)
                 ->setOrder(2)
                 ->setIncidenceId(10)
@@ -139,6 +141,7 @@ class DocumentXmlTest extends TestCase
                 ->setKey((new IncidenceKey)->setId(61)->setValue("roma")),
             (new Incidence)
                 ->setType("gol")
+                ->setSubtype("gol de jugada")
                 ->setId(18906745)
                 ->setOrder(4)
                 ->setIncidenceId(9)
@@ -185,6 +188,7 @@ class DocumentXmlTest extends TestCase
                 ->setKey((new IncidenceKey)->setId(61)->setValue("roma")),
             (new Incidence)
                 ->setType("gol")
+                ->setSubtype("gol en contra")
                 ->setId(18906828)
                 ->setOrder(8)
                 ->setIncidenceId(10)

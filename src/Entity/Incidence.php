@@ -56,6 +56,11 @@ class Incidence
     private $second;
 
     /**
+     * @var string
+     */
+    private $subtype;
+
+    /**
      * @var int
      */
     private $order;
@@ -262,6 +267,25 @@ class Incidence
     public function setSecond(int $second): Incidence
     {
         $this->second = $second;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSubtype(): string
+    {
+        return $this->subtype;
+    }
+
+    /**
+     * @param string $subtype
+     *
+     * @return Incidence
+     */
+    public function setSubtype(string $subtype): Incidence
+    {
+        $this->subtype = $subtype;
         return $this;
     }
 
