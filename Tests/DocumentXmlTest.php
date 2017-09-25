@@ -111,7 +111,8 @@ class DocumentXmlTest extends TestCase
                 ->setMinute(21)
                 ->setSecond(31)
                 ->setTime("PT")
-                ->setPlayer((new IncidencePlayer)->setId(25189)->setName("Edin Dzeko "))
+                ->setPlayer((new IncidencePlayer)->setId(25189)
+                    ->setName("Edin Dzeko "))
                 ->setTeamShortName("ROM")
                 ->setKey((new IncidenceKey)->setId(61)->setValue("roma")),
             (new Incidence)
@@ -123,7 +124,8 @@ class DocumentXmlTest extends TestCase
                 ->setMinute(34)
                 ->setSecond(30)
                 ->setTime("PT")
-                ->setPlayer((new IncidencePlayer)->setId(189402)->setName("Fabio Lucioni (EC)"))
+                ->setPlayer((new IncidencePlayer)->setId(189402)
+                    ->setName("Fabio Lucioni (EC)"))
                 ->setExtraCode("(EC)")
                 ->setTeamShortName("BEN")
                 ->setKey((new IncidenceKey)->setId(61)->setValue("roma")),
@@ -135,8 +137,10 @@ class DocumentXmlTest extends TestCase
                 ->setMinute(0)
                 ->setSecond(0)
                 ->setTime("ST")
-                ->setPlayerIn((new IncidencePlayer)->setId(75568)->setName("Stephan El Shaarawy"))
-                ->setPlayerOut((new IncidencePlayer)->setId(103788)->setName("Cengiz Ünder"))
+                ->setPlayerIn((new IncidencePlayer)->setId(75568)
+                    ->setName("Stephan El Shaarawy"))
+                ->setPlayerOut((new IncidencePlayer)->setId(103788)
+                    ->setName("Cengiz Ünder"))
                 ->setTeamShortName("ROM")
                 ->setKey((new IncidenceKey)->setId(61)->setValue("roma")),
             (new Incidence)
@@ -148,7 +152,8 @@ class DocumentXmlTest extends TestCase
                 ->setMinute(6)
                 ->setSecond(17)
                 ->setTime("ST")
-                ->setPlayer((new IncidencePlayer)->setId(25189)->setName("Edin Dzeko "))
+                ->setPlayer((new IncidencePlayer)->setId(25189)
+                    ->setName("Edin Dzeko "))
                 ->setTeamShortName("ROM")
                 ->setKey((new IncidenceKey)->setId(61)->setValue("roma")),
             (new Incidence)
@@ -159,9 +164,11 @@ class DocumentXmlTest extends TestCase
                 ->setMinute(11)
                 ->setSecond(0)
                 ->setTime("ST")
-                ->setPlayer((new IncidencePlayer)->setId(189313)->setName("Gianluca Di Chiara "))
+                ->setPlayer((new IncidencePlayer)->setId(189313)
+                    ->setName("Gianluca Di Chiara "))
                 ->setTeamShortName("BEN")
-                ->setKey((new IncidenceKey)->setId(6348)->setValue("benevento")),
+                ->setKey((new IncidenceKey)->setId(6348)
+                    ->setValue("benevento")),
             (new Incidence)
                 ->setType("cambio")
                 ->setId(18906808)
@@ -170,10 +177,13 @@ class DocumentXmlTest extends TestCase
                 ->setMinute(18)
                 ->setSecond(7)
                 ->setTime("ST")
-                ->setPlayerIn((new IncidencePlayer)->setId(138364)->setName("Vittorio Parigini"))
-                ->setPlayerOut((new IncidencePlayer)->setId(127342)->setName("Achraf Lazaar"))
+                ->setPlayerIn((new IncidencePlayer)->setId(138364)
+                    ->setName("Vittorio Parigini"))
+                ->setPlayerOut((new IncidencePlayer)->setId(127342)
+                    ->setName("Achraf Lazaar"))
                 ->setTeamShortName("BEN")
-                ->setKey((new IncidenceKey)->setId(6348)->setValue("benevento")),
+                ->setKey((new IncidenceKey)->setId(6348)
+                    ->setValue("benevento")),
             (new Incidence)
                 ->setType("cambio")
                 ->setId(18906816)
@@ -182,8 +192,10 @@ class DocumentXmlTest extends TestCase
                 ->setMinute(22)
                 ->setSecond(7)
                 ->setTime("ST")
-                ->setPlayerIn((new IncidencePlayer)->setId(147762)->setName("Gérson"))
-                ->setPlayerOut((new IncidencePlayer)->setId(145166)->setName("Lorenzo Pellegrini"))
+                ->setPlayerIn((new IncidencePlayer)->setId(147762)
+                    ->setName("Gérson"))
+                ->setPlayerOut((new IncidencePlayer)->setId(145166)
+                    ->setName("Lorenzo Pellegrini"))
                 ->setTeamShortName("ROM")
                 ->setKey((new IncidenceKey)->setId(61)->setValue("roma")),
             (new Incidence)
@@ -195,7 +207,8 @@ class DocumentXmlTest extends TestCase
                 ->setMinute(28)
                 ->setSecond(17)
                 ->setTime("ST")
-                ->setPlayer((new IncidencePlayer)->setId(138393)->setName("Lorenzo Venuti (EC)"))
+                ->setPlayer((new IncidencePlayer)->setId(138393)
+                    ->setName("Lorenzo Venuti (EC)"))
                 ->setExtraCode("(EC)")
                 ->setTeamShortName("BEN")
                 ->setKey((new IncidenceKey)->setId(61)->setValue("roma")),
@@ -207,10 +220,13 @@ class DocumentXmlTest extends TestCase
                 ->setMinute(29)
                 ->setSecond(20)
                 ->setTime("ST")
-                ->setPlayerIn((new IncidencePlayer)->setId(55202)->setName("Samuel Armenteros"))
-                ->setPlayerOut((new IncidencePlayer)->setId(37356)->setName("Massimo Coda"))
+                ->setPlayerIn((new IncidencePlayer)->setId(55202)
+                    ->setName("Samuel Armenteros"))
+                ->setPlayerOut((new IncidencePlayer)->setId(37356)
+                    ->setName("Massimo Coda"))
                 ->setTeamShortName("BEN")
-                ->setKey((new IncidenceKey)->setId(6348)->setValue("benevento")),
+                ->setKey((new IncidenceKey)->setId(6348)
+                    ->setValue("benevento")),
             (new Incidence)
                 ->setType("cambio")
                 ->setId(18906831)
@@ -219,8 +235,10 @@ class DocumentXmlTest extends TestCase
                 ->setMinute(29)
                 ->setSecond(37)
                 ->setTime("ST")
-                ->setPlayerIn((new IncidencePlayer)->setId(70219)->setName("Alessandro Florenzi"))
-                ->setPlayerOut((new IncidencePlayer)->setId(44263)->setName("Diego Perotti"))
+                ->setPlayerIn((new IncidencePlayer)->setId(70219)
+                    ->setName("Alessandro Florenzi"))
+                ->setPlayerOut((new IncidencePlayer)->setId(44263)
+                    ->setName("Diego Perotti"))
                 ->setTeamShortName("ROM")
                 ->setKey((new IncidenceKey)->setId(61)->setValue("roma")),
             (new Incidence)
@@ -231,9 +249,11 @@ class DocumentXmlTest extends TestCase
                 ->setMinute(38)
                 ->setSecond(57)
                 ->setTime("ST")
-                ->setPlayer((new IncidencePlayer)->setId(138364)->setName("Vittorio Parigini "))
+                ->setPlayer((new IncidencePlayer)->setId(138364)
+                    ->setName("Vittorio Parigini "))
                 ->setTeamShortName("BEN")
-                ->setKey((new IncidenceKey)->setId(6348)->setValue("benevento")),
+                ->setKey((new IncidenceKey)->setId(6348)
+                    ->setValue("benevento")),
         ];
         $teams = [];
         $teams[] = (new Team)->setId(6348)
@@ -256,6 +276,7 @@ class DocumentXmlTest extends TestCase
             ->setTeams($teams)
             ->setStatus((new Status)->setId(2)->setValue('Finalizado'))
             ->setHourStatus('14:50:17')
+            ->setLevel('Temporada Regular')
             ->setIncidences($incidences);
         $sheet = (new Sheet)
             ->setSport((new Sport)->setId(1)->setValue('Fútbol'))
@@ -265,6 +286,44 @@ class DocumentXmlTest extends TestCase
                 ->setValue('Italia - Serie A 2017-2018'))
             ->setTournamentAltName((new Tournament)->setId(4685)
                 ->setValue('Italia 2017 2018'))
+            ->setMatchSheet($match_sheet);
+        $this->assertEquals($sheet, $response);
+    }
+
+    public function test_parse_channel_tenis_ok()
+    {
+        $xml_string = $this->getXml('channel_tenis_ok.xml');
+        $response = $this->document->parseChannel($xml_string);
+        $teams = [
+            (new Team)->setId(148472)
+                ->setCountryId(172)
+                ->setShortName('D. Popko')
+                ->setService('N'),
+            (new Team)->setId(89972)
+                ->setCountryId(1)
+                ->setShortName('G. Pella')
+                ->setService('N'),
+        ];
+        $match_sheet = (new MatchSheet)
+            ->setId(402493)
+            ->setDate(20170917)
+            ->setDay('Domingo')
+            ->setHour('08:40')
+            ->setInstance('Kazajistan vs Argentina - Partido 5')
+            ->setType('vuelta')
+            ->setTimezone(-3)
+            ->setStatus((new Status)->setId(7)
+                ->setValue('Finalizado por abandono'))
+            ->setIncidences([])
+            ->setLevel('Repechaje')
+            ->setTeams($teams);
+        $sheet = (new Sheet)
+            ->setCategory((new Category)->setId(28)->setValue('Copa Davis'))
+            ->setSport((new Sport)->setId(5)->setValue('Tenis'))
+            ->setTournament((new Tournament)->setId(4513)
+                ->setValue('Copa Davis 2017'))
+            ->setTournamentAltName((new Tournament)->setId(4513)
+                ->setValue('Copa Davis'))
             ->setMatchSheet($match_sheet);
         $this->assertEquals($sheet, $response);
     }

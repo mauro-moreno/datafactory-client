@@ -46,6 +46,11 @@ class MatchSheet
     private $instance;
 
     /**
+     * @var string
+     */
+    private $level;
+
+    /**
      * @var Status
      */
     private $status;
@@ -195,6 +200,25 @@ class MatchSheet
     public function setInstance(string $instance): MatchSheet
     {
         $this->instance = $instance;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLevel(): string
+    {
+        return $this->level;
+    }
+
+    /**
+     * @param string $level
+     *
+     * @return MatchSheet
+     */
+    public function setLevel(string $level): MatchSheet
+    {
+        $this->level = $level;
         return $this;
     }
 

@@ -33,6 +33,11 @@ class Team
     /**
      * @var string
      */
+    public $service;
+
+    /**
+     * @var string
+     */
     public $short_name;
 
     /**
@@ -108,6 +113,25 @@ class Team
     public function setPenaltyGoals(int $penalty_goals): Team
     {
         $this->penalty_goals = $penalty_goals;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getService(): string
+    {
+        return $this->service;
+    }
+
+    /**
+     * @param string $service
+     *
+     * @return Team
+     */
+    public function setService(string $service): Team
+    {
+        $this->service = $service;
         return $this;
     }
 

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<ficha>
+    <deporte id="5">Tenis</deporte>
+    <categoria id="28" canal="copadavis">Copa Davis</categoria>
+    <campeonato id="4513">Copa Davis 2017</campeonato>
+    <campeonatoNombreAlternativo id="4513">Copa Davis</campeonatoNombreAlternativo><fichapartido id="402493" fecha="Kazajistan vs Argentina - Partido 5" tipo="vuelta" dia="20170917" horario="08:40" gmt="-3" nombreDia="Domingo" nombrenivel="Repechaje" fn="5" nivelCarga="1" nivelCobertura="" formacionStatus="">
+    <equipo id="148472" paisId="172" condicion="local" nom="D. Popko" ape="Popko" nombre="D. Popko" key="dpopko" nombreCorto="D. Popko" sets="" paisNombre="Kazajistán" paisSigla="KAZ" saque="N" indumentaria="">
+        <incidencias>	<incidencia tipo="Abandono" id="18865563" idInc="115">		<descripcion></descripcion>	</incidencia></incidencias></equipo>
+    <equipo id="89972" paisId="1" condicion="visitante" nom="G. Pella" ape="Pella" nombre="G. Pella" key="gpella" nombreCorto="G. Pella" sets="" paisNombre="Argentina" paisSigla="ARG" saque="N" indumentaria="">
+        <incidencias></incidencias></equipo>
+    <horaInicio>09:42:00</horaInicio><estadoEvento idestado="7">Finalizado por abandono</estadoEvento><estadioapodo id="" capacidad="" clubEstadio=""></estadioapodo><espectadores></espectadores><recaudacion></recaudacion><medios></medios></fichapartido>
+</ficha>

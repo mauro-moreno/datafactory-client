@@ -23,6 +23,10 @@ MauroMoreno\DataFactory\Entity\Team:
         setter: "setPenaltyGoals"
       xml_attribute: true
       serialized_name: "golesDefPenales"
+    service:
+      type: "string"
+      serialized_name: "saque"
+      xml_attribute: true
     short_name:
       type: "string"
       accessor:
