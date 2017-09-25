@@ -5,3 +5,56 @@ MauroMoreno\DataFactory\Entity\Incidence:
     id:
       type: "int"
       xml_attribute: true
+    extra_code:
+      type: "string"
+      accessor:
+        getter: "getExtraCode"
+        setter: "setExtraCode"
+      serialized_name: "codigoExtra"
+    incidence_id:
+      type: "int"
+      accessor:
+        getter: "getIncidenceId"
+        setter: "setIncidenceId"
+      xml_attribute: true
+      serialized_name: "inciid"
+    key:
+      type: "MauroMoreno\\DataFactory\\Entity\\IncidenceKey"
+    minute:
+      type: "int"
+      serialized_name: "minuto"
+    order:
+      type: "int"
+      xml_attribute: true
+      serialized_name: "orden"
+    player:
+      type: "MauroMoreno\\DataFactory\\Entity\\IncidencePlayer"
+      serialized_name: "jugador"
+    player_in:
+      type: "MauroMoreno\\DataFactory\\Entity\\IncidencePlayer"
+      accessor:
+        getter: "getPlayerIn"
+        setter: "setPlayerIn"
+      serialized_name: "jugadorentra"
+    player_out:
+      type: "MauroMoreno\\DataFactory\\Entity\\IncidencePlayer"
+      accessor:
+        getter: "getPlayerOut"
+        setter: "setPlayerOut"
+      serialized_name: "jugadorsale"
+    second:
+      type: "int"
+      serialized_name: "segundo"
+    team_short_name:
+      type: "string"
+      accessor:
+        getter: "getTeamShortName"
+        setter: "setTeamShortName"
+      serialized_name: "equiponomcorto"
+    time:
+      type: "string"
+      serialized_name: "tiempo"
+    type:
+      type: "string"
+      serialized_name: "tipo"
+      xml_attribute: true
