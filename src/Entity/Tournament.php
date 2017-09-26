@@ -47,25 +47,6 @@ class Tournament
     /**
      * @return string
      */
-    public function getChannel(): string
-    {
-        return $this->channel;
-    }
-
-    /**
-     * @param string $channel
-     *
-     * @return Tournament
-     */
-    public function setChannel(string $channel): Tournament
-    {
-        $this->channel = $channel;
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
     public function getValue(): string
     {
         return $this->value;

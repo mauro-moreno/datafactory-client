@@ -19,6 +19,8 @@ class TeamTest extends TestCase
         $this->assertEquals(1, $team->getGoals());
         $this->assertEquals($team, $team->setPenaltyGoals(1));
         $this->assertEquals(1, $team->getPenaltyGoals());
+        $this->assertEquals($team, $team->setService('team_value'));
+        $this->assertEquals('team_value', $team->getService());
         $this->assertEquals($team, $team->setShortName('team_value'));
         $this->assertEquals('team_value', $team->getShortName());
     }

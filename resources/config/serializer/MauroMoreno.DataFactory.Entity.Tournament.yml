@@ -5,9 +5,6 @@ MauroMoreno\DataFactory\Entity\Tournament:
     id:
       type: "int"
       xml_attribute: true
-    channel:
-      type: "string"
-      xml_attribute: true
     value:
       type: "string"
       xml_value: true
