@@ -27,7 +27,7 @@ class Client
      */
     public function __construct(array $config = [])
     {
-        $defaults['base_uri'] = self::BASE_URI;
+        $defaults = ['base_uri' => self::BASE_URI];
         $config = array_merge($defaults, $config);
         $this->guzzleClient = new GuzzleClient($config);
     }
