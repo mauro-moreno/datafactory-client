@@ -5,6 +5,9 @@ MauroMoreno\DataFactory\Entity\Incidence:
     id:
       type: "int"
       xml_attribute: true
+    description:
+      type: "string"
+      serialized_name: "descripcion"
     extra_code:
       type: "string"
       accessor:

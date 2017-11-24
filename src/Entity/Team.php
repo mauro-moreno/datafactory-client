@@ -21,6 +21,11 @@ class Team
     public $country_id;
 
     /**
+     * @var Incidence[]
+     */
+    public $incidences;
+
+    /**
      * @var int
      */
     public $goals;
@@ -94,6 +99,25 @@ class Team
     public function setGoals(int $goals): Team
     {
         $this->goals = $goals;
+        return $this;
+    }
+
+    /**
+     * @return Incidence[]
+     */
+    public function getIncidences()
+    {
+        return $this->incidences;
+    }
+
+    /**
+     * @param $incidences
+     *
+     * @return Team
+     */
+    public function setIncidences($incidences)
+    {
+        $this->incidences = $incidences;
         return $this;
     }
 

@@ -16,6 +16,11 @@ MauroMoreno\DataFactory\Entity\Team:
       type: "int"
       xml_attribute: true
       serialized_name: "goles"
+    incidences:
+      type: "array<MauroMoreno\\DataFactory\\Entity\\Incidence>"
+      xml_list:
+        entry_name: incidencia
+      serialized_name: incidencias
     penalty_goals:
       type: "int"
       accessor:

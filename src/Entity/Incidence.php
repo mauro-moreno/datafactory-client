@@ -18,6 +18,11 @@ class Incidence
     /**
      * @var string
      */
+    private $description;
+
+    /**
+     * @var string
+     */
     private $extra_code;
 
     /**
@@ -96,6 +101,25 @@ class Incidence
     public function setId(int $id): Incidence
     {
         $this->id = $id;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string $description
+     *
+     * @return Incidence
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
         return $this;
     }
 
