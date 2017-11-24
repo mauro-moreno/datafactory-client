@@ -260,12 +260,14 @@ class DocumentXmlTest extends TestCase
             ->setShortName('Benevento')
             ->setGoals(0)
             ->setPenaltyGoals(0)
-            ->setCountryId(3);
+            ->setCountryId(3)
+            ->setIncidences([]);
         $teams[] = (new Team)->setId(61)
             ->setShortName('Roma')
             ->setGoals(4)
             ->setPenaltyGoals(0)
-            ->setCountryId(3);
+            ->setCountryId(3)
+            ->setIncidences([]);
         $match_sheet = (new MatchSheet)->setId(414256)
             ->setInstance('Fecha 5')
             ->setType('')
@@ -298,11 +300,17 @@ class DocumentXmlTest extends TestCase
             (new Team)->setId(148472)
                 ->setCountryId(172)
                 ->setShortName('D. Popko')
-                ->setService('N'),
+                ->setService('N')
+                ->setIncidences([
+                    (new Incidence)->setDescription(5)
+                ]),
             (new Team)->setId(89972)
                 ->setCountryId(1)
                 ->setShortName('G. Pella')
-                ->setService('N'),
+                ->setService('N')
+                ->setIncidences([
+                    (new Incidence)->setDescription(7)
+                ]),
         ];
         $match_sheet = (new MatchSheet)
             ->setId(402493)
