@@ -44,6 +44,11 @@ class Team
      * @var string
      */
     public $short_name;
+    
+    /**
+     * @var string
+     */
+    public $country_slug;
 
     /**
      * @return int
@@ -175,6 +180,25 @@ class Team
     public function setShortName(string $short_name): Team
     {
         $this->short_name = $short_name;
+        return $this;
+    }
+    
+    /**
+     * @return string
+     */
+    public function getCountrySlug(): string
+    {
+        return $this->country_slug;
+    }
+    
+    /**
+     * @param string $country_slug
+     *
+     * @return Team
+     */
+    public function setCountrySlug(string $country_slug): Team
+    {
+        $this->country_slug = $country_slug;
         return $this;
     }
 

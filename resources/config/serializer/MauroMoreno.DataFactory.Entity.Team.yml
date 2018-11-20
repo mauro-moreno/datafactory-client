@@ -39,3 +39,10 @@ MauroMoreno\DataFactory\Entity\Team:
         setter: "setShortName"
       xml_attribute: true
       serialized_name: "nombreCorto"
+    country_slug:
+      type: "string"
+      accessor:
+        getter: "getCountrySlug"
+        setter: "setCountrySlug"
+      xml_attribute: true
+      serialized_name: "paisSigla"
