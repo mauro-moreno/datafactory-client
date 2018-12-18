@@ -55,9 +55,9 @@ class Sheet
     }
 
     /**
-     * @return MatchSheet
+     * @return mixed
      */
-    public function getMatchSheet(): MatchSheet
+    public function getMatchSheet()
     {
         return $this->match_sheet;
     }
